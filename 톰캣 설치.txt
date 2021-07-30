@@ -1,0 +1,29 @@
+이클립스 - 톰캣 
+
+1. apach tomcat 9 설치
+
+2. c 드라이브에 압축 해제
+
+3. 이클립스 -> Window -> Preferences -> Server -> Runtime Environment -> Add -> 톰캣 설치된 폴더
+	
+   선택
+
+4. File -> new ->Dynamic Web Project
+
+5. 프로젝트 -> src->webApp 밑에 html, jsp 파일 설치
+
+6. 실행은 프로젝트명 아이콘 옆에서 실행.
+-----------------------------------------------------------------------------------------------------------
+
+인텔리제이 - 톰캣
+
+1.File -> new -> Gradle -> java, web 체크
+
+2. 빈 폴더에 생성.
+
+3. 오른쪽 상단 configuration 선택
+
+4. 1) tomcat -> local -> server의 application server의 configure 에서 톰캣 폴더 선택
+
+   2) Deployment의 '+' 선택 후 Gradle : org.example : untitled-1.0 snapshot.war
+
