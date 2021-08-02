@@ -1,6 +1,8 @@
 package org.zerock.Store.ui;
 
 import java.util.Scanner;
+import org.zerock.Store.StoreService;
+import org.zerock.Store.StoreDTO;
 
 public class FindMenuUI extends AbstractMenuUI {
 
