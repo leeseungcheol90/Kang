@@ -15,14 +15,14 @@ public class OneToOneClient {
         System.out.println("Connected....");
         OutputStream out = socket.getOutputStream();
         InputStream in=socket.getInputStream();
-        Scanner keyScanner = new Scanner(System.in);
+        Scanner inScanner = new Scanner(System.in);
 
         for (int i=0;i<100;i++) {
             //문자열을 byte[] 바꿔서 out.write(바이트배열)
-            String msg = keyScanner.nextLine() + "\n";
+            String line = inScanner.nextLine() + "\n";
 
-            out.write(msg.getBytes());
-            Scanner inScanner = new Scanner(in);
+            out.write(line.getBytes());
+            System.out.println("--------------------------------");
             System.out.println(inScanner.nextLine());
         }
         out.close();
